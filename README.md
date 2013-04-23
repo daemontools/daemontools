@@ -1,3 +1,5 @@
+More info available at: http://cr.yp.to/daemontools.html
+
 How to install daemontools
 ==========================
 

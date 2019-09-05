@@ -1,0 +1,24 @@
+Mon, 24 Apr 2000 18:47:32 +0200
+
+These man-pages were created from djb's documentation found at
+http://cr.yp.to/daemontools.html .
+
+Gzip the man-pages and copy them to a subdirectory man8/ of any directory
+found in Your $MANPATH:
+
+  # gzip *.8 ; cp *.8.gz /usr/share/man/man8/
+
+See http://smarden.org/pape/djb/ for recent informations.
+
+G. Pape <pape@smarden.org>
+
+Thu, 16 Nov 2000 12:16:46 +0100
+  * added missing .TP in softlimit.8, option -o is now shown.
+
+Sat, 14 Jul 2001 18:41:17 +0200
+  * man-pages adapted to version 0.76: http://cr.yp.to/daemontools.html
+
+Thu, 31 Jan 2002 10:54:46 +0100
+  * updated readproctitle.8 according to readproctitle.html.
+  * updated multilog.8 according to mutlilog.html.
+  * minor cosmetics.

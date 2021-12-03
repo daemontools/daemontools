@@ -12,19 +12,19 @@ rm -f daemontools
 ln -s daemontools-0.76 daemontools
 mv -f daemontools ..
 
-echo 'Making command links in /command...'
-mkdir -p /command
+echo 'Making command links in $HOME/usr/command...'
+mkdir -p $HOME/usr/command
 for i in `cat package/commands`
 do
-  rm -f /command/$i'{new}'
-  ln -s $parent/daemontools/command/$i /command/$i'{new}'
-  mv -f /command/$i'{new}' /command/$i
+  rm -f $HOME/usr/command/$i'{new}'
+  ln -s $parent/daemontools/command/$i $HOME/usr/command/$i'{new}'
+  mv -f $HOME/usr/command/$i'{new}' $HOME/usr/command/$i
 done
-echo 'Making compatibility links in /usr/local/bin...'
-mkdir -p /usr/local/bin
+echo 'Making compatibility links in $HOME/usr/local/bin...'
+mkdir -p $HOME/usr/local/bin
 for i in `cat package/commands`
 do
-  rm -f /usr/local/bin/$i'{new}'
-  ln -s /command/$i /usr/local/bin/$i'{new}'
-  mv -f /usr/local/bin/$i'{new}' /usr/local/bin/$i
+  rm -f $HOME/usr/local/bin/$i'{new}'
+  ln -s $HOME/usr/command/$i $HOME/usr/local/bin/$i'{new}'
+  mv -f $HOME/usr/local/bin/$i'{new}' $HOME/usr/local/bin/$i
 done

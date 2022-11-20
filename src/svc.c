@@ -27,7 +27,7 @@ int main(int argc,const char *const *argv)
 
   sig_ignore(sig_pipe);
 
-  while ((opt = getopt(argc,argv,"udopchaitkx")) != opteof)
+  while ((opt = getopt(argc,argv,"udopchaivwtkx")) != opteof)
     if (opt == '?')
       strerr_die1x(100,"svc options: u up, d down, o once, x exit, p pause, c continue, h hup, a alarm, i interrupt, v usr1, w usr2, t term, k kill");
     else

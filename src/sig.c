@@ -8,6 +8,8 @@ int sig_child = SIGCHLD;
 int sig_cont = SIGCONT;
 int sig_hangup = SIGHUP;
 int sig_int = SIGINT;
+int sig_usr1 = SIGUSR1;
+int sig_usr2 = SIGUSR2;
 int sig_pipe = SIGPIPE;
 int sig_term = SIGTERM;
 

@@ -8,6 +8,8 @@ extern int sig_child;
 extern int sig_cont;
 extern int sig_hangup;
 extern int sig_int;
+extern int sig_usr1;
+extern int sig_usr2;
 extern int sig_pipe;
 extern int sig_term;
 

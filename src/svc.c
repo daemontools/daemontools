@@ -29,7 +29,7 @@ int main(int argc,const char *const *argv)
 
   while ((opt = getopt(argc,argv,"udopchaitkx")) != opteof)
     if (opt == '?')
-      strerr_die1x(100,"svc options: u up, d down, o once, x exit, p pause, c continue, h hup, a alarm, i interrupt, t term, k kill");
+      strerr_die1x(100,"svc options: u up, d down, o once, x exit, p pause, c continue, h hup, a alarm, i interrupt, v usr1, w usr2, t term, k kill");
     else
       if (datalen < sizeof data)
         if (byte_chr(data,datalen,opt) == datalen)

@@ -187,6 +187,12 @@ void doit(void)
 	case 'i':
 	  if (pid) kill(pid,SIGINT);
 	  break;
+	case 'v':
+	  if (pid) kill(pid,SIGUSR1);
+	  break;
+	case 'w':
+	  if (pid) kill(pid,SIGUSR2);
+	  break;
 	case 'p':
 	  flagpaused = 1;
 	  announce();
